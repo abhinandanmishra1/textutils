@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your details</title>
+    <style>
+        .btn {
+
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+      width:40%;
+
+}
+.blue{
+
+   border: 2px solid black;
+    border-color: #2196F3;
+}
+.we{
+   text-align:center;
+   margin-left:30%;
+}
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+    margin-top:1em;
+}
+
+    </style>
+</head>
+<body>
+<div class="btn blue we">
+<h1>Hey {{name}},<br> Welcome To Exams Notifications</h1>
+<h5>Congratulations, you are from {{branch}} branch.</h5>
+
+<h3>About You</h3>
+{{intro}}
+</div>
+<div id="outer">
+  <div class="inner"><button type="submit" class="blue"  ><a href="capitalizefirst">Logout</a></button></div>
+  <div class="inner"><button type="submit" class="blue" ><a href="third">Next</a></button></div>
+
+</div>
+
+</body>
+</html>

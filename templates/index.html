@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Analyzer</title>
+</head>
+<body style="background-color:cyan;">
+<p style="font-family:Comic Sans MS" ><a href="/">Home</a> | <a href="submit">About</a> | <a href="third">Play</a></p>
+<h1 style="text-align:center;">Welcome to Text Analyzer.</h1>
+<h3>Enter your Info below .</h3>
+
+
+<form action="/submit" method="post"> {% csrf_token %}
+    <label>Name </label>
+<input type="text" name="name"><br><br>
+<label>Branch </label>
+<input type="text" name="branch"><br>
+<h3>Write about yourself</h3>
+<textarea name="intro" style="margin: 0px; width: 522px; height: 195px;"></textarea>
+</br>
+<button type="submit" >Submit</button>
+    </form>
+</body>
+</html>

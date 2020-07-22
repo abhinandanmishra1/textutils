@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>You go now</title>
+    <style>
+    .center{
+       text-align:center;}
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+    margin-top:1em;
+}
+       </style>
+</head>
+<body>
+<h1 class="center">You're in Third page </h1>
+<h3 class="center">Are You Excited?</h3>
+<h2 class="center">Analyze Text Now</h2>
+<form action='/analyze' method='post'> {% csrf_token %}
+<textarea style="margin-left: 30%;  width: 602px; height: 228px;" name="text"></textarea>
+</br>
+    <input type="checkbox" name="removepunc" style="margin-left:30%;"> Remove Punctuations<br>
+     <input type="checkbox" name="uppercase" style="margin-left:30%;"> UpperCase<br>
+     <input type="checkbox" name="extraspaceremover" style="margin-left:30%;"> Extra Space Remover<br>
+       <input type="checkbox" name="charcounter" style="margin-left:30%;"> Char Counter<br>
+
+<div id="outer">
+     <div class="inner"><button type="submit" class="blue"  >Analyze</button></div>
+  <div class="inner"><button type="submit" class="blue"  ><a href="/">Home</a></button></div>
+  <div class="inner"><button type="submit" class="blue" ><a href="third">Refresh↺</a></button></div>
+
+</div>
+    </form>
+</body>
+</html>
